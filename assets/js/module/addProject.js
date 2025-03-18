@@ -1,10 +1,8 @@
 const projects = [
-    {nome: "E-commmerce", img: "assets/images/projects/image.png", descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.", url: "#", techs: ["html", "css", "js"], type: "front-end"},
-    {nome: "Dashboard", img: "assets/images/projects/image.png", descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", url: "#", techs: ["html", "css", "js"], type: "front-end"},
-    {nome: "Blog", img: "assets/images/projects/image.png", descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", url: "#", techs: ["html", "css", "js"], type: "front-end"},
-    {nome: "Taskmanager", img: "assets/images/projects/image.png", descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", url: "#", techs: ["html", "css", "js"], type: "front-end"},
-    {nome: "Landing Page - TechNest", img: "assets/images/projects/image.png", descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", url: "#", techs: ["figma"], type: "design ux-ui"},
-    {nome: "Aplicativo CRM - TechNest", img: "assets/images/projects/image.png", descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", url: "#", techs: ["figma"], type: "design ux-ui"},
+    {nome: "E-commmerce", img: "assets/images/projects/E-commerce.png", descricao: "E-commerce simples e objetivo onde os usuários podem navegar, adicionar produtos ao carrinho.", url: "https://e-commerce-portfolio-arthurr.netlify.app/", techs: ["html", "css", "js"], type: "front-end"},
+    {nome: "Impacto Gym", img: "assets/images/projects/ImpactoGym.png", descricao: "Design UX/UI para um webapp e CRUD, com interface intuitiva e interativa. Foco na simplicidade e fluidez das operações de criação, leitura, atualização e exclusão de dados, proporcionando uma experiência de usuário eficiente e agradável.", url: "https://www.figma.com/design/xWDxQfFXsssGq3fOBW5AVn/Impacto-Gym---Overview?node-id=1-2", techs: ["figma"], type: "design ux-ui"},
+    {nome: "Landing Page - TechNest", img: "assets/images/projects/TechNest.png", descricao: "Landing page com design UX/UI moderno, simulando uma empresa de tecnologia. Foco em navegação intuitiva e experiência visual envolvente, destacando os serviços e soluções da empresa.", url: "https://www.figma.com/design/2srL4aqidDGUI0Yd3MQpjg/Project?node-id=0-1", techs: ["figma"], type: "design ux-ui"},
+    {nome: "CRM - TechNest", img: "assets/images/projects/CRM.png", descricao: "Design UX/UI de um app de CRM, focado em facilitar o gerenciamento de clientes e dados. Interface intuitiva, otimizada para produtividade e com visual clean, garantindo uma experiência eficiente e agradável.", url: "https://www.figma.com/design/2srL4aqidDGUI0Yd3MQpjg/Project?node-id=421-3620", techs: ["figma"], type: "design ux-ui"}
 ];
 
 export default function addProject() {
@@ -14,6 +12,7 @@ export default function addProject() {
         const a = document.createElement("a");
         a.classList.add("projects-card-link");
         a.setAttribute("href", obj.url);
+        a.setAttribute("target", "_blank");
         a.setAttribute("data-tech", obj.type);
 
         const article = document.createElement("article");

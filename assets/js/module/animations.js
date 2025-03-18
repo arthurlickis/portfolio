@@ -9,7 +9,7 @@ export default function animations() {
         origin: "left",
         duration: 1500,
         distance: "10%",
-        delay: 2000
+        delay: 1500
     });
 
     ScrollReveal().reveal(".studys", {
