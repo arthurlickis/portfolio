@@ -123,7 +123,10 @@ a {
 
 .hero-banner {
     text-align: center;
-   
+}
+
+.text-objective {
+    text-align: center;
 }
 
 .hero-banner__profile {
@@ -154,6 +157,12 @@ a {
     bottom: 10%; 
     right: 8%; 
     z-index: 1;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.go-start:focus, .go-start:hover {
+    background-color: var(--baseGray-300);
 }
 
 .tags {

@@ -1,7 +1,6 @@
 import updateLayout from "./updateLayout.js";
 
 export default function filterProject() {
-    const projectsCards = document.querySelector(".projects-cards");
     const projectsCardLink = document.querySelectorAll(".projects-card-link");
     const inputFilter = document.querySelector(".input-filter");
 
