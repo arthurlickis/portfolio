@@ -1,0 +1,79 @@
+@media screen and (min-width: 500px) {
+    .hero-banner__profile {
+        max-width: 25%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .wrapper-hero-banner, .wrapper-banner {
+        background-position: center;
+    }
+
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-lg);
+        width: 100%;
+    }
+
+    .projects-card {
+        height: calc(100% - var(--spacing-lg));
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tags {
+        justify-content: center;
+        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .container {
+        mask-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 8%,
+            rgba(0, 0, 0, 1) 92%,
+            rgba(0, 0, 0, 0)
+          );
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 56px;
+        line-height: 120%;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .tags.scrolling .tags__tag {
+        width: 200px; 
+    }
+
+    .go-start {
+        display: none;
+    }
+}
