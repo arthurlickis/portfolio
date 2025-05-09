@@ -71,9 +71,10 @@
 @media screen and (min-width: 1280px) {
     .tags.scrolling .tags__tag {
         width: 200px; 
+        left: max(calc(150px * 11), 100%);
     }
 
     .go-start {
-        display: none;
+       opacity: 0;
     }
 }
